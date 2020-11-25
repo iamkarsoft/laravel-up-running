@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\TasksController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-	return view('welcome');
-});
+// Route::get('/', function () {
+// 	return view('welcome');
+// });
 
-Route::get('welcome', [WelcomeController::class, 'index'])->name('welcome');
+// Route::get('welcome', [WelcomeController::class, 'index'])->name('welcome');
+
+// task controller
+Route::get('/', [TasksController::class, 'index']);
